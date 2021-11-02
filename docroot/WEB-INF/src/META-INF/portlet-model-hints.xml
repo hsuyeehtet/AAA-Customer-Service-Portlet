@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.hsuyeehtet.customerservice.model.Customer">
+		<field name="uuid" type="String" />
+		<field name="customerId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="userId" type="long" />
+		<field name="userName" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="customerName" type="String" />
+		<field name="customerEmail" type="String" />
+		<field name="customerContact" type="String" />
+		<field name="address" type="String" />
+		<field name="township" type="String" />
+		<field name="state" type="String" />
+		<field name="payment" type="String" />
+		<field name="servicesId" type="long" />
+		<field name="orderTime" type="Date" />
+	</model>
+	<model name="com.hsuyeehtet.customerservice.model.Services">
+		<field name="uuid" type="String" />
+		<field name="servicesId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="userId" type="long" />
+		<field name="userName" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="servicesName" type="String" />
+		<field name="servicesPrice" type="String" />
+		<field name="servicesPlans" type="String" />
+	</model>
+</model-hints>

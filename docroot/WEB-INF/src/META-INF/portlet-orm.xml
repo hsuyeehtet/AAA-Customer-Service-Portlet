@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm http://java.sun.com/xml/ns/persistence/orm_1_0.xsd">
+	<persistence-unit-metadata>
+		<xml-mapping-metadata-complete/>
+		<persistence-unit-defaults>
+			<access>PROPERTY</access>
+		</persistence-unit-defaults>
+	</persistence-unit-metadata>
+	<mapped-superclass class="com.hsuyeehtet.customerservice.model.impl.CustomerModelImpl">
+		<attributes>
+			<id name="customerId" />
+			<basic name="uuid">
+				<column name="UUID_" />
+			</basic>
+			<basic name="groupId" />
+			<basic name="companyId" />
+			<basic name="userId" />
+			<basic name="userName" />
+			<basic name="createDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="modifiedDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="customerName" />
+			<basic name="customerEmail" />
+			<basic name="customerContact" />
+			<basic name="address" />
+			<basic name="township" />
+			<basic name="state">
+				<column name="STATE_" />
+			</basic>
+			<basic name="payment" />
+			<basic name="servicesId" />
+			<basic name="orderTime">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+			<transient name="userUuid" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="com.hsuyeehtet.customerservice.model.impl.ServicesModelImpl">
+		<attributes>
+			<id name="servicesId" />
+			<basic name="uuid">
+				<column name="UUID_" />
+			</basic>
+			<basic name="groupId" />
+			<basic name="companyId" />
+			<basic name="userId" />
+			<basic name="userName" />
+			<basic name="createDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="modifiedDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="servicesName" />
+			<basic name="servicesPrice" />
+			<basic name="servicesPlans" />
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+			<transient name="userUuid" />
+		</attributes>
+	</mapped-superclass>
+	<entity class="com.hsuyeehtet.customerservice.model.impl.CustomerImpl" name="Customer">
+		<table name="AAACustomerPortlet_Customer" />
+		<attributes />
+	</entity>
+	<entity class="com.hsuyeehtet.customerservice.model.impl.ServicesImpl" name="Services">
+		<table name="AAACustomerPortlet_Services" />
+		<attributes />
+	</entity>
+</entity-mappings>
